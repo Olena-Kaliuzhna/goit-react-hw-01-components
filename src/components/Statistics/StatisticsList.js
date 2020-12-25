@@ -1,10 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import ListItem from './ListItem';
+import styles from './StatisticsList.module.css';
 
 function StatisticsList({ stats }) {
   return (
-    <ul >
+    <ul className={styles.statList}>
       {stats.map(stat => {
         const { id, label, percentage} = stat;
         return (

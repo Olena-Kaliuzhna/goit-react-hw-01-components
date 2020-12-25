@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import './TransactionItem.module.css';
 
 function TransactionItem(item) {
    const {type, amount, currency} = item;

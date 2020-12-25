@@ -1,0 +1,33 @@
+.stats {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+  
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: calc(100% / 3);
+  height: 100px;
+  background-color: #a4c9ee;
+  border: 1px solid #dbe3ec;
+  font-size: 18px;
+  color: #0e2e4e;
+}
+.item:hover {
+    background-color: #708eac;
+    color: #eff1f3;
+}
+  
+.label {
+  margin-bottom: 10px;
+  font-size: 18px;  
+}
+  
+.quantity {
+  font-weight: 700;
+ 
+}
