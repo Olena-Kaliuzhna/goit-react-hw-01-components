@@ -12,8 +12,7 @@ function StatisticsList({ stats }) {
           <ListItem
             key={id}
             label={label}
-            percentage={percentage}
-            // color={randomColor()}
+            percentage={percentage}            
           />
         );
       })}

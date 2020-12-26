@@ -4,38 +4,36 @@ import TransactionItem from './TransactionItem';
 import styles from './TransactionHistory.module.css';
 
 function TransactionHistory({items}) {
-   
-    return (
+  return (
     <table className={styles.transactionHistory}>
       <thead>
-         <tr>
-           <th>Type</th>
-           <th>Amount</th>
-           <th>Currency</th>
-         </tr>
-     </thead>
-     <tbody>
-    
-      {items.map(item => {
-        const { id, type, amount, currency} = item;
-        return (
+        <tr>
+          <th>Type</th>
+          <th>Amount</th>
+          <th>Currency</th>
+        </tr>
+      </thead>
+            
+      <tbody>    
+        {items.map(item => {
+          const { id, type, amount, currency} = item;
+          return (
             <TransactionItem
-            key={id}
-            type={type}
-            amount={amount}
-            currency={currency}
+              key={id}
+              type={type}
+              amount={amount}
+              currency={currency}
             />
-        );
-      })}
-        
-     </tbody>
+          );
+        })}        
+      </tbody>
     </table>
   );
 }
 
 
 TransactionHistory.propTypes = {
-    items: PropTypes.array,
+  items: PropTypes.array,
 };
 
 

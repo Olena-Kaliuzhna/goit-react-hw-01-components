@@ -2,8 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styles from './Stats.module.css';
 
-function Stats({stats}) {
-  // console.log(stats);
+function Stats({stats}) {  
   const { followers, views, likes } = stats;
   return (
     <ul className={styles.stats}>

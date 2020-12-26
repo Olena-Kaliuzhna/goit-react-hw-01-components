@@ -3,14 +3,14 @@ import PropTypes from 'prop-types';
 import './TransactionItem.module.css';
 
 function TransactionItem(item) {
-   const {type, amount, currency} = item;
-    return (
+  const {type, amount, currency} = item;
+  return (
     <tr>
       <td>{type}</td>
       <td>{amount}</td>
       <td>{currency}</td>
     </tr>
-    )
+  );
 };
     
 TransactionItem.propTypes = {

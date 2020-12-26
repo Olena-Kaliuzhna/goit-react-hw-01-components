@@ -4,20 +4,20 @@ import FriendItem from './FriendItem';
 import styles from './FriendList.module.css';
 
 function FriendList({ friends }) {
-   if (friends.length === 0) return null;
-    return (
-      <ul className={styles.friendsList}>
-        {friends.map(friend => {
-          const { avatar, name, id, isOnline} = friend;
-          return (
-              <FriendItem
-              avatar={avatar}
-              name={name}
-              isOnline={isOnline}
-              key={id}
-              />
-          );
-        })}
+  if (friends.length === 0) return null;
+  return (
+    <ul className={styles.friendsList}>
+      {friends.map(friend => {
+        const { avatar, name, id, isOnline} = friend;
+        return (
+          <FriendItem
+          avatar={avatar}
+          name={name}
+          isOnline={isOnline}
+          key={id}
+          />
+        );
+      })}
     </ul>
   );
 }

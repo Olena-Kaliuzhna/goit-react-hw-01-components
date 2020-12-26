@@ -1,34 +1,32 @@
 html {
-    box-sizing: border-box;
-  }
+  box-sizing: border-box;
+}
   
-  *,
-  *::before,
-  *::after {
-    box-sizing: inherit;
-  }
-  
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+} 
 
 body {
-    padding-top: 30px;
-    background-color: #cbd9ff;
-  
+  padding-top: 30px;
+  background-color: #cbd9ff;  
 }
 
 p {
-    margin: 0;
+  margin: 0;
 }
 .title {    
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: 900;
-    text-shadow: -2px 8px 7px rgb(2, 36, 87);
-    color:  #142544;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 900;
+  text-shadow: -2px 8px 7px rgb(2, 36, 87);
+  color:  #142544;
 }
 .task {
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: 700;
-    text-shadow: -2px 8px 7px #2c4c5f;
-    color:  #1d3768;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-shadow: -2px 8px 7px #2c4c5f;
+  color:  #1d3768;
 }
