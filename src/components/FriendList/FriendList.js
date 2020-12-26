@@ -8,13 +8,13 @@ function FriendList({ friends }) {
   return (
     <ul className={styles.friendsList}>
       {friends.map(friend => {
-        const { avatar, name, id, isOnline} = friend;
+        const { avatar, name, id, isOnline } = friend;
         return (
           <FriendItem
-          avatar={avatar}
-          name={name}
-          isOnline={isOnline}
-          key={id}
+            avatar={avatar}
+            name={name}
+            isOnline={isOnline}
+            key={id}
           />
         );
       })}

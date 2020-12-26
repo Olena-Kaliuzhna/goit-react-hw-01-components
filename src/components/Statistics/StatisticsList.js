@@ -23,4 +23,3 @@ StatisticsList.propTypes = {
   stats: PropTypes.array,
 };
 export default StatisticsList; 
-

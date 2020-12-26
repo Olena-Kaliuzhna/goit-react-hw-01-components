@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import TransactionItem from './TransactionItem';
 import styles from './TransactionHistory.module.css';
 
-function TransactionHistory({items}) {
+function TransactionHistory({ items }) {
   return (
     <table className={styles.transactionHistory}>
       <thead>
@@ -13,10 +13,10 @@ function TransactionHistory({items}) {
           <th>Currency</th>
         </tr>
       </thead>
-            
-      <tbody>    
+
+      <tbody>
         {items.map(item => {
-          const { id, type, amount, currency} = item;
+          const { id, type, amount, currency } = item;
           return (
             <TransactionItem
               key={id}
@@ -25,16 +25,14 @@ function TransactionHistory({items}) {
               currency={currency}
             />
           );
-        })}        
+        })}
       </tbody>
     </table>
   );
 }
 
-
 TransactionHistory.propTypes = {
   items: PropTypes.array,
 };
-
 
 export default TransactionHistory;

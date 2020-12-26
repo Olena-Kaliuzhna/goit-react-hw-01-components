@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import './TransactionItem.module.css';
 
 function TransactionItem(item) {
-  const {type, amount, currency} = item;
+  const { type, amount, currency } = item;
   return (
     <tr>
       <td>{type}</td>
@@ -11,8 +11,8 @@ function TransactionItem(item) {
       <td>{currency}</td>
     </tr>
   );
-};
-    
+}
+
 TransactionItem.propTypes = {
   type: PropTypes.string.isRequired,
   amount: PropTypes.string.isRequired,
@@ -20,3 +20,4 @@ TransactionItem.propTypes = {
 };
 
 export default TransactionItem;
+

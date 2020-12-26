@@ -4,7 +4,7 @@
   margin: 0;
   padding: 0;
 }
-  
+
 .item {
   display: flex;
   flex-direction: column;
@@ -21,13 +21,12 @@
   background-color: #708eac;
   color: #eff1f3;
 }
-  
+
 .label {
   margin-bottom: 10px;
-  font-size: 18px;  
+  font-size: 18px;
 }
-  
+
 .quantity {
   font-weight: 700;
- 
 }
