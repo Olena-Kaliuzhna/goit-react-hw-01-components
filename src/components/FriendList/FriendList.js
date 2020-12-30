@@ -7,8 +7,7 @@ function FriendList({ friends }) {
   if (friends.length === 0) return null;
   return (
     <ul className={styles.friendsList}>
-      {friends.map(friend => {
-        const { avatar, name, id, isOnline } = friend;
+      {friends.map(({ avatar, name, id, isOnline }) => {
         return (
           <FriendItem
             avatar={avatar}

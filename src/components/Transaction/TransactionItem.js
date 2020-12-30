@@ -2,8 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './TransactionItem.module.css';
 
-function TransactionItem(item) {
-  const { type, amount, currency } = item;
+function TransactionItem({ type, amount, currency }) {
   return (
     <tr>
       <td>{type}</td>
@@ -20,4 +19,3 @@ TransactionItem.propTypes = {
 };
 
 export default TransactionItem;
-
